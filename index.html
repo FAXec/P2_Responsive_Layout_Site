@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Fay's Travel Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +13,8 @@
     
 </head>
 <body>
+    
+    <div class="wrapper">
     <header>
         <h1 class="main-title">Fahim Xec</h1>
     <nav class="main-nav">
@@ -18,20 +22,25 @@
             <li><a href="#" class="home-button">home</a></li>
             <li><a href="#" class="portfolio-button">portfolio</a></li>
             <li><a href="#" class="contact-button">contact</a></li>
+            <li><a href="#" class="skill-button">skills</a></li>
         </ul>
     </nav>
-    </header>
+    
   
-  <main>
-   
-        <figure id="profile-image">
+    <div class="profile-image">
+
+        <figure>
             <img src="images/responsive-layout-profile.png" alt="My profile image">
         </figure>
 
         
     <p> Hi! I'm a front-end developer who loves responsive design and css. I recently finished a 
         degree in front-end web development at Treehouse and am excited to put my skills to use!</p>
+    
+    </div>
+    </header>
 
+    <main>
     
     <div class="content">
         <section>
@@ -89,21 +98,42 @@
         </section>
 
         <section>
+        <h2 class="skillsets">skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+        </section>
+
+        <section>
             <h2>calculator</h2>
             <p>someone can enter in the numbers they want, and press the big blue button and get the result.</p>
         </section>
 
+       
+
     </div>
-    </main>
+        </main>
 
-
+        
 
      <footer>
-        If you're interested in chatting or want more information about what I've been working on. I'd love to hear from you
-        Phone: +1(111)555-1234
-        Email: fxec@mysite.com
-     </footer>   
+         <h2>contact</h2>
+            <p> you're interested in chatting or want more information about what I've been working on. I'd love to hear from you</p>
+            <p>Phone: +1(111)555-1234</p>
+            <p>Email: fxec@mysite.com</p>
 
+            <hr style="width: 100%; text-align: center;">
+        
+            <div class="sub-title">
+            <p> Fahim Xec </p> 
+            <p> back to top </p>
+        </div>
+     </footer>
+     
+    </div>
+    
 </body>
 </html>
 

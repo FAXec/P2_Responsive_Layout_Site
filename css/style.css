@@ -40,8 +40,10 @@ margin-right: auto;
 
 }
 
-
-
+.profile-image {
+width:10%;
+box-sizing: content-box;
+}
 
 .wrapper{
 margin: 1em;
@@ -90,41 +92,49 @@ font-weight: bold;
 }
 
 
-@media screen and (min-width: 768px) {
 
-  header{
-    display: flex;
+@media (min-width: 768px) {
 
-
-
+  .wrapper {
+    width: 70%;
+    max-width: 1000px;
+    margin: auto;
   }
 
-.wrapper {
-  width: 70%;
-  max-width: 1000px;
-  margin: 0 auto;
-
+header{
+  display: flex;
+  flex-direction: row;
 
 }
 
+nav ul {
+display: flex;
+justify-content: space-between;
 
-  .content{
-  display:flex
-  flex-direction:column;
-  flex-wrap: wrap;
 }
 
-
-
-
-
+.main-title{
+margin-left: 0;
 
 }
 
 
 
+}
+
+
+
 
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
+
+.content{
+display: flex;
+
+}
+
+
+
+
 }

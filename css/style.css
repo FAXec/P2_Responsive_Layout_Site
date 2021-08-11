@@ -3,66 +3,48 @@
   font-size: 16px;
   line-height: 1.5;
   box-sizing: border-box;
-
 }
 
-header{
-display: flex;
-flex-direction: column;
-background-color: whitesmoke;
-justify-content: center;
-margin-right: auto;
-
+header {
+  background-color: whitesmoke;
 }
 
-.main-title{
-  margin-top:2rem;
+.main-title {
+  margin-top: 2rem;
   margin-bottom: 0;
   padding: 0;
   text-align: center;
   font-weight: bold;
- } 
- 
- nav ul {
+}
+
+nav ul {
   text-transform: uppercase;
   font-weight: bold;
   display: block;
-  background-color:oldlace;
- }
+  background-color: oldlace;
+}
 
-
-
-.home-button, .portfolio-button, .contact-button, .skill-button {
+.home-button,
+.portfolio-button,
+.contact-button,
+.skill-button {
   display: flex;
   justify-content: center;
   border: 16px solid whitesmoke;
-  
-
 }
 
-.profile-image {
-width:10%;
-box-sizing: content-box;
+img {
+  max-width: 100%;
 }
 
-.wrapper{
-margin: 1em;
-padding: 1em;
-} 
-
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50px;
+.wrapper {
+  padding: 1em;
 }
-
-
 
 h2 {
   text-transform: capitalize;
   text-align: center;
+  margin-top: 50px;
 }
 
 .portfolio {
@@ -74,67 +56,42 @@ p {
 }
 
 ul li {
-text-align: center;
+  text-align: center;
 }
 
-
-
-footer{
-background-color: whitesmoke;
+footer {
+  background-position: auto;
+  background-color: whitesmoke;
 }
 
-.sub-title{
-display: flex;
-justify-content: space-between;
-text-transform: capitalize;
-font-weight: bold;
-
+hr {
+  margin-top: 50px;
 }
 
-
+.sub-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-weight: bold;
+}
 
 @media (min-width: 768px) {
-
   .wrapper {
-    width: 70%;
     max-width: 1000px;
     margin: auto;
   }
 
-header{
-  display: flex;
-  flex-direction: row;
+  header {
+    display: flex;
+    flex-direction: row;
+  }
 
-}
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
 
-nav ul {
-display: flex;
-justify-content: space-between;
-
-}
-
-.main-title{
-margin-left: 0;
-
-}
-
-
-
-}
-
-
-
-
-}
-
-@media (min-width: 1024px) {
-
-.content{
-display: flex;
-
-}
-
-
-
-
+  .main-title {
+    margin-left: 0;
+  }
 }

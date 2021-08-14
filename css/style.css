@@ -117,19 +117,23 @@ hr {
     display: inline-block;
   }
 
-  img {
+  /* img {
     float: right;
   }
 
   .profile-image {
     width: 200px;
     margin-left: 2em;
+  } */
+
+  .intro {
+    display: flex;
+    order: 1 0;
   }
 
   .content {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .top {
@@ -144,7 +148,4 @@ hr {
   ul li:first-child {
     margin-left: 0px;
   }
-}
-
-@media (min-width: 1024px) {
 }

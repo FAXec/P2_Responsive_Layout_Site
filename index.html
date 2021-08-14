@@ -21,21 +21,21 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#" class="home-button">home</a></li>
-                    <li><a href="#" class="portfolio-button">portfolio</a></li>
-                    <li><a href="#" class="contact-button">contact</a></li>
-                    <li><a href="#" class="skill-button">skills</a></li>
+                    <li><a href="#portfolio" class="portfolio-button">portfolio</a></li>
+                    <li><a href="#contact" class="contact-button">contact</a></li>
+                    <li><a href="#skills" class="skill-button">skills</a></li>
                 </ul>
             </nav>
             
          </div>
-    <div class="profile-image">
+    <div class=intro>
 
-        <figure>
-            <img src="images/responsive-layout-profile.png" alt="My profile image">
+        <figure >
+            <img class="profile-image" src="images/responsive-layout-profile.png" alt="My profile image">
         </figure>
 
     
-            <p> Hi! I'm a front-end developer who loves responsive design and css. I recently finished a 
+            <p class=intro-text> Hi! I'm a front-end developer who loves responsive design and css. I recently finished a 
             degree in front-end web development at Treehouse and am excited to put my skills to use!</p>
  
     </div>
@@ -46,7 +46,7 @@
     <div class="content">
         <section>
 
-            <h2 class="portfolio">portfolio</h2>
+            <h2 class="portfolio" id="portfolio">portfolio</h2>
 
             <figure class="portfolio-image">
             <img src="images/portfolio-1.png" alt="my portfolio">
@@ -99,7 +99,7 @@
         </section>
 
         <section>
-        <h2 class="skillsets">skills</h2>
+        <h2 class="skillsets" id="skills">skills</h2>
         <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -120,15 +120,26 @@
         
 
      <footer>
-         <h2>contact</h2>
+         <h2 id="contact">contact</h2>
             <p> If you're interested in chatting or want more information about what I've been working on. I'd love to hear from you</p>
             <p>Phone: +1(111)555-1234</p>
             <p>Email: fxec@mysite.com</p>   
-            <hr>          
-        <div class="sub-title">
-            <p> Fahim Xec </p> 
-            <p> back to top </p>
+            <hr>  
+            
+        <div class="footer-display">  
+            <h2>Fahim Xec</h2>
+            <ul class="footer-nav">
+                <li class="top"> <a href="#top"></a>  back to top</li>
+                <li class="full"> <a href="#top"></a> Home</li>
+                <li class="full"> <a href="portfolio"></a> portfolio</li>
+                <li class="full"> <a href="contact"></a> contact</li>
+            </ul>        
         </div>
+
+            
+    </div>
+
+
      </footer>
      
     </div>

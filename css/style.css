@@ -122,9 +122,18 @@ hr {
     text-align: center;
   }
 
-  .content {
+  .content-wrapper {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+  }
+
+  .marketing-page,
+  .search-page,
+  .travel-app,
+  .favorite-spots,
+  .photo-gallery,
+  .calculator {
+    width: 50%;
   }
 
   .skillsets {
@@ -148,8 +157,17 @@ hr {
 }
 
 @media (min-width: 1024px) {
-  .content-laptop {
+  .content-wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .marketing-page,
+  .search-page,
+  .travel-app,
+  .favorite-spots,
+  .photo-gallery,
+  .calculator {
+    width: 33.33%;
   }
 }

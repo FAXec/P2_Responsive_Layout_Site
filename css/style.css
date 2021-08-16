@@ -85,6 +85,14 @@ footer {
   font-weight: bold;
 }
 
+.footer-title {
+  margin-left: 1em;
+}
+
+.footer-nav {
+  margin-right: 1em;
+}
+
 .full {
   display: none;
 }
@@ -102,15 +110,12 @@ hr {
 
 @media (min-width: 768px) {
   .main-title {
-    margin-top: 0;
+    margin-top: 20px;
   }
 
-  .top-bar {
+  .main-nav {
     display: flex;
-    justify-content: space-between;
-  }
-  ul li {
-    display: inline-block;
+    justify-content: center;
   }
 
   .intro {
@@ -157,6 +162,19 @@ hr {
 }
 
 @media (min-width: 1024px) {
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    margin-top: 1em;
+  }
+
+  .main-title {
+    margin-left: 2em;
+  }
+
   .content-wrapper {
     display: flex;
     flex-wrap: wrap;

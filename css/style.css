@@ -6,7 +6,7 @@
 }
 
 header {
-  background-color: whitesmoke;
+  overflow: auto;
 }
 
 .main-title {
@@ -28,13 +28,18 @@ a {
   text-decoration: none;
 }
 
-.home-button,
-.portfolio-button,
-.contact-button,
-.skill-button {
+.main-nav {
   display: flex;
-  justify-content: center;
-  border: 16px solid whitesmoke;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.main-nav a {
+  display: block;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0.5em;
+  border: 4px solid #fafafa;
 }
 
 a:hover {
@@ -49,10 +54,12 @@ img {
 .intro-text {
   font-family: "roboto", sans-serif;
   color: mediumvioletred;
+  max-width: 500px;
 }
 
-main {
-  background-color: honeydew;
+main,
+.main-nav a {
+  background-color: #fff;
 }
 
 h2 {
@@ -66,12 +73,14 @@ h2 {
 
 p {
   text-align: center;
+  margin: 0 20px;
 }
 
 ul li {
   text-align: center;
 }
 
+header,
 footer {
   background-color: whitesmoke;
 }
@@ -115,12 +124,29 @@ hr {
 
   .main-nav {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    border: 4px solid #fafafa;
+    background-color: #fff;
+  }
+
+  .main-nav a {
+    margin: 0 10px;
+    padding: 0.5em 2em;
   }
 
   .intro {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .profile-image {
+    width: 50em;
+    padding: 1em 2em 2em 0;
+  }
+
+  .intro-text {
+    margin-top: 50px;
+    text-align: justify;
   }
 
   #portfolio {
@@ -141,10 +167,20 @@ hr {
     width: 50%;
   }
 
+  figure {
+    margin: 0 5px;
+  }
+
+  p {
+    margin: 0 30px;
+  }
+
   .skillsets {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
   }
 
   .top {
@@ -165,6 +201,7 @@ hr {
   .top-header {
     display: flex;
     justify-content: space-between;
+    border: 4px solid #fafafa;
   }
 
   .main-nav {
@@ -173,6 +210,11 @@ hr {
 
   .main-title {
     margin-left: 2em;
+  }
+
+  .intro-text {
+    margin-top: 100px;
+    text-align: justify;
   }
 
   .content-wrapper {
@@ -187,5 +229,13 @@ hr {
   .photo-gallery,
   .calculator {
     width: 33.33%;
+  }
+
+  figure {
+    margin: 0 10px;
+  }
+
+  p {
+    margin: 0 30px;
   }
 }
